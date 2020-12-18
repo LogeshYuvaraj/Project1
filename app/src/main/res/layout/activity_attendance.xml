@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attncescrn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_corner"
+    android:padding="@dimen/font_10"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/at2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/StartAttendance"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:text="Start attendance"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/StopAttendance"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_bg"
+            android:text="Stop attendance"
+            android:textColor="#ffffff"
+            android:textSize="12dp"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

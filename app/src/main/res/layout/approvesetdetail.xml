@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearlay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:padding="5dp"
+                android:background="@drawable/background_corner"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/EmployeeName"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Employee Name."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12sp" />
+
+                <EditText
+                    android:id="@+id/EmployeeId"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Employee Id."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12sp" />
+
+                <EditText
+                    android:id="@+id/Prarity"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:text="Prarity."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

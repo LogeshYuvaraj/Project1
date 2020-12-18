@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/font_10"
+    android:background="@drawable/background_corner">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Organisation Name *"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtorgname"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Organisation name"
+                    android:textAllCaps="true"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Organisation Type*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtorgtype"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Organisation Type"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Place Of Supply *"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/placeofsuply_et"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Place Of Supply"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text=" Cardcode*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtcardcode"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="cardcode"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="ItemName*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtitemname"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="ItemName"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="State*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edstate"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/disablecolor"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="City*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edcity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/disablecolor"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="PinCode*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtpin"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/disablecolor"
+                    android:hint="PinCode"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Country*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtcunty"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Type Your Country"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="GSTIN No*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtgstin_no"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Type Your GSTIN No"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Contact No*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtcontno"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Contact No"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Delivery Preference*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtdelivery"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Delivery Preference"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Email*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Payment Terms*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtpayterm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Payment Terms"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Status*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtstatus"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:hint="Status"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Address*"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/edtretaddress"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cusprofile_recycle"
+                    android:layout_width="392dp"
+                    android:layout_height="177dp"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="70dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/rounded_bg"
+                        android:text="Submit"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/rounded_bg"
+                        android:text="Cancel"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

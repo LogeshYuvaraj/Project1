@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/font_10"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/activityscrlview"
+        android:layout_above="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_corner"
+
+            android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/activity_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:gravity="center"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Activity"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/activity_et"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/white_bg_grey_border"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:hint="Select"
+                        android:focusable="false"
+                        />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/activity_spin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="3"
+                        android:dropDownWidth="wrap_content"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bpname_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:visibility="gone"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bp Name"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/bpname_spin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="3"
+                        android:dropDownWidth="wrap_content"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/fromdate_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:textColor="@color/grey"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="From Date"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:id="@+id/fromdate_et"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/white_bg_grey_border"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/todate_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:textColor="@color/grey"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="To Date"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:id="@+id/todate_et"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/white_bg_grey_border"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/customer_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Customer"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/grey"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <EditText
+                        android:id="@+id/customer_et"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/white_bg_grey_border"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:hint="Select"
+                        android:focusable="false"
+                        />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/customer_spin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="3"
+                        android:dropDownWidth="250dp"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Description_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Description"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/Description_et"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/white_bg_grey_border"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/contact_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:textColor="@color/grey"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ContactNo"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:id="@+id/contact_et"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/white_bg_grey_border"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:inputType="number"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/status_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Status"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp" />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/statusspinner"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/spinner_background2"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:dropDownWidth="wrap_content"
+                        />
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/followupdte_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="2dp"
+                android:textColor="@color/grey"
+                android:paddingEnd="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Followupdt"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/followupdte_et"
+                    android:layout_width="141dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:focusable="false"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/checkin_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="2dp"
+                android:visibility="gone"
+                android:textColor="@color/grey"
+                android:paddingEnd="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Check In"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/checkin_et"
+                    android:layout_width="141dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/white_bg_grey_border"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:focusable="false"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/checkout_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:visibility="gone"
+                    android:textColor="@color/grey"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Check Out"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:id="@+id/checkout_et"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/white_bg_grey_border"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:focusable="false" />
+                </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/reference_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:visibility="gone"
+                    android:textColor="@color/grey"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Reference No"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:id="@+id/referenceno_et"
+                        android:layout_width="141dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/white_bg_grey_border"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:focusable="false"
+                        android:enabled="false"
+                        />
+                </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Save"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/saveAS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Save As"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+

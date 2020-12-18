@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearlay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/canceltv"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/cell_shape"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="X"-->
+<!--                    android:textColor="@color/red"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="@dimen/textsize12sp" />-->
+
+                <ImageView
+                    android:id="@+id/editrowbtn"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/edit"
+                    android:background="@drawable/cell_shape"
+                    android:layout_alignParentRight="true" />
+
+                <ImageButton
+                    android:id="@+id/deletebtn"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:src="@drawable/ic_deleteicon" />
+
+                <TextView
+                    android:id="@+id/itemcode"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Itemcode."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12sp" />
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Name."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12sp" />
+                <TextView
+                    android:id="@+id/Uom"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Uom."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12sp" />
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Quantity."
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12sp" />
+                <EditText
+                    android:id="@+id/Price"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cell_shape"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Price."
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

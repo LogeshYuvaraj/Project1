@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearlay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:id="@+id/EmpName_tv"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Emp Name"
+        android:background="@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize12sp"
+      />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:id="@+id/AttnDate_tv"
+        android:text="AttnDate"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:background="@drawable/cell_shape"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize12sp"
+        />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:id="@+id/StartTime_tv"
+        android:text="Start Time"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:background="@drawable/cell_shape"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize12sp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:id="@+id/StopTime_tv"
+        android:text="Stop Time"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:background="@drawable/cell_shape"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize12sp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/StartCustomerName_tv"
+        android:text="Start Customer Name"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:background="@drawable/cell_shape"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize12sp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/StopCustomerName_tv"
+        android:text="Stop Customer Name"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:background="@drawable/cell_shape"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize12sp"
+        />
+
+
+
+</LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

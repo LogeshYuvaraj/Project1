@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B6C55B</color>
+    <color name="colorPrimaryDark">#B6C55B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="lightgreen">#B6C55B</color>
+    <color name="green">#00ff00</color>
+    <color name="black">#000000</color>
+    <color name="grey">#B4000000</color>
+    <color name="InputBg">#f7f8f9</color>
+    <color name="light_grey">#ff999999</color>
+    <color name="colorCell">#015093</color>
+    <color name="goibibo_blue">#ff2f68ad</color>
+    <color name="lightgray">#808080</color>
+    <color name="red">#E20E0E</color>
+    <color name="colorgreylight">#D1999999</color>
+</resources>

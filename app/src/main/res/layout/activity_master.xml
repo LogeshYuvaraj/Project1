@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_corner"
+    android:padding="@dimen/font_10"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/masterscrlview"
+        android:layout_above="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:gravity="center"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Customer Type"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/Custype_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/spinner_background"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/grouplayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:gravity="center"
+                    android:paddingEnd="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Group"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/Group_spin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/spinner_background"
+                        android:visibility="gone"
+                        />
+                    <EditText
+                        android:id="@+id/group_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:hint="Select"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/groupcodelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Group Code"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/grpCode_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:layout_margin="5dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/currencylayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Currency"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/Currency_spin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/spinner_background"
+                        android:visibility="gone"
+                        />
+                    <EditText
+                        android:id="@+id/currency_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:padding="10dp"
+                        android:hint="Select"
+                        android:focusable="false"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/currencycodelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Currency Code"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/currCode_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/codelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Code"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/Code_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/namelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Name"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/Name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/conname_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact Name"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ConName_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                         />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/emaillayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Email"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/Email_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                    />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/contnolayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact No"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ConNo_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.5"
+                        android:dropDownWidth="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:inputType="phone"
+                        android:ems="10"
+                       />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Save"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

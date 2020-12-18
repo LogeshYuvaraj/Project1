@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/font_10"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/allowancescrlview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:elevation="6dp"
+        android:id="@+id/main_layout"
+        android:padding="5dp"
+        android:background="@drawable/background_corner"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Employee"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/font_14" />
+
+            <Spinner
+                android:id="@+id/employeespin"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittextheight"
+                android:layout_weight="2"
+                android:background="@drawable/spinner_background"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:hint="Select"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+          >
+            <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/approvalRecycle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Approval Screen"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/font_14" />
+
+            <Spinner
+                android:id="@+id/approvalscrnspin"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittextheight"
+                android:layout_weight="2"
+                android:background="@drawable/spinner_background"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Approve Set"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/font_14" />
+
+            <Spinner
+                android:id="@+id/approvesetspin"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittextheight"
+                android:layout_weight="2"
+                android:background="@drawable/spinner_background"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/font_10"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/linearlay2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/employeename_tv"
+                                    android:ellipsize="end"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:text="Employee Name"
+                                    android:background="@drawable/cell_shape"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textsize12sp" />
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/employeeid_tv"
+                                    android:text="Employee Id "
+                                    android:textColor="@color/white"
+                                    android:ellipsize="end"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/textsize12sp"
+                                    android:background="@drawable/cell_shape"
+                                    />
+
+                                <TextView
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/prarity_tv"
+                                    android:text="Prarity"
+                                    android:textColor="@color/white"
+                                    android:ellipsize="end"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/textsize12sp"
+                                    android:background="@drawable/cell_shape"
+                                    />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/approvset_rv"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Approval View"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/font_14" />
+
+            <Spinner
+                android:id="@+id/approvalviewspin"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittextheight"
+                android:layout_weight="2"
+                android:background="@drawable/spinner_background"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/font_10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryDark"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/employeeName_tv"
+                            android:ellipsize="end"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Employee Name"
+                            android:background="@drawable/cell_shape"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize12sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/employeeId_tv"
+                            android:text="Employee Id "
+                            android:textColor="@color/white"
+                            android:ellipsize="end"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsize12sp"
+                            android:background="@drawable/cell_shape"
+                            />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Prarity_tv"
+                            android:text="Prarity"
+                            android:textColor="@color/white"
+                            android:ellipsize="end"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsize12sp"
+                            android:background="@drawable/cell_shape"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/approveview_rv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:id="@+id/btnlayout"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/rounded_bg"
+                    android:text="Save"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+</ScrollView>
+        </RelativeLayout>
+

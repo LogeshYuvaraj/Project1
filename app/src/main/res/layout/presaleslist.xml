@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearlay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/editimage"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/edit"
+                        android:background="@drawable/cell_shape"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/DocNo_tv"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="DocNo."
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/DocDate_tv"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="DocDate."
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Type_tv"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Type."
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/OppType_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="OppType"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/Category_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Category"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/TargetStartDate_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="TargetStartDate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/TargetEndDate_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="TargetEndDate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/TargetStatusDate_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="TargetStatusDate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/TargetClDate_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="TargetClDate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/PotentialAmt_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="PotentialAmt"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/WeightedAmt_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="WeightedAmt"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/GrossProfit_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="GrossProfit"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:id="@+id/Reported_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Reported"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/RespDate_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="RespDate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="200dp"
+                        android:id="@+id/RespEmpName_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="RespEmpName"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/VerifyDate_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="VerifyDate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:id="@+id/Itemcode_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Item code"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+                    <TextView
+                        android:layout_width="400dp"
+                        android:id="@+id/ItemName_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Item Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:id="@+id/Qty_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Qty"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:id="@+id/Price_tv"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Price"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12sp" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

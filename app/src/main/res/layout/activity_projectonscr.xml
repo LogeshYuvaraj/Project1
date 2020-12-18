@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_corner"
+    android:padding="@dimen/font_10"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/allowancescrlview"
+        android:layout_above="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Sales Employee"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/salesemp_tv"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_backgrounds"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_margin="5dp"
+            android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Category"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_14" />
+
+        <EditText
+            android:id="@+id/empcategory_et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:dropDownWidth="wrap_content"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:padding="10dp"
+            android:hint="Select"
+            android:focusable="false" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/empcategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:background="@drawable/spinner_background"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Fromdate"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_14" />
+
+        <EditText
+            android:id="@+id/frmdate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Todate"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_14" />
+
+        <EditText
+            android:id="@+id/todate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+             />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="ItemName"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_14" />
+
+        <EditText
+            android:id="@+id/itemname_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:dropDownWidth="wrap_content"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:padding="10dp"
+            android:hint="Select"
+            android:focusable="false" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/itemspin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:visibility="gone"/>
+    </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="40dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/white"
+          android:paddingEnd="2dp"
+          android:paddingStart="2dp">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:text="ItemCode"
+              android:textColor="@color/grey"
+              android:textSize="@dimen/font_14" />
+
+          <EditText
+              android:id="@+id/Itemcode_et"
+              android:layout_width="0dp"
+              android:layout_height="40dp"
+              android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+              android:layout_weight="1.5"
+              android:layout_margin="5dp"
+              android:padding="10dp"
+              android:focusable="false"
+              android:focusableInTouchMode="false" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Quantity"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_14" />
+
+        <EditText
+            android:id="@+id/Quantity_et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Price"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_14" />
+
+        <EditText
+            android:id="@+id/price_et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_backgrounds"                        android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Add"
+            android:layout_margin="10dp"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Clear"
+            android:layout_margin="10dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+      <HorizontalScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="@dimen/font_10">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <LinearLayout
+                  android:id="@+id/linearlay2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@color/colorPrimaryDark"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/edittv"
+                      android:layout_width="50dp"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/cell_shape"
+                      android:ellipsize="end"
+                      android:padding="5dp"
+                      android:singleLine="true"
+                      android:text="Edit"
+                      android:textColor="@color/red"
+                      android:textStyle="bold"
+                      android:textSize="@dimen/textsize12sp" />
+
+                  <TextView
+                      android:id="@+id/canceltv"
+                      android:layout_width="50dp"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/cell_shape"
+                      android:ellipsize="end"
+                      android:padding="5dp"
+                      android:singleLine="true"
+                      android:text="Delete"
+                      android:textColor="@color/red"
+                      android:textStyle="bold"
+                      android:textSize="@dimen/textsize12sp" />
+
+
+<!--                  <TextView-->
+<!--                      android:layout_width="50dp"-->
+<!--                      android:layout_height="match_parent"-->
+<!--                      android:background="@drawable/cell_shape"-->
+<!--                      android:ellipsize="end"-->
+<!--                      android:padding="5dp"-->
+<!--                      android:singleLine="true"-->
+<!--                      android:text="S.No"-->
+<!--                      android:textColor="@color/white"-->
+<!--                      android:textSize="@dimen/textsize12sp" />-->
+
+                  <TextView
+
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/cell_shape"
+                      android:ellipsize="end"
+                      android:padding="5dp"
+                      android:singleLine="true"
+                      android:text="Itemcode."
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/textsize12sp" />
+
+                  <TextView
+                      android:layout_width="300dp"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/cell_shape"
+                      android:ellipsize="end"
+                      android:padding="5dp"
+                      android:singleLine="true"
+                      android:text="Name."
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/textsize12sp" />
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/cell_shape"
+                      android:ellipsize="end"
+                      android:padding="5dp"
+                      android:singleLine="true"
+                      android:text="Quantity."
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/textsize12sp" />
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/cell_shape"
+                      android:ellipsize="end"
+                      android:padding="5dp"
+                      android:singleLine="true"
+                      android:text="Price."
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/textsize12sp" />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+
+                  <androidx.recyclerview.widget.RecyclerView
+                      android:id="@+id/projectionRecycle"
+                      android:layout_width="fill_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="10dp" />
+              </LinearLayout>
+          </LinearLayout>
+      </HorizontalScrollView>
+  </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_bg"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

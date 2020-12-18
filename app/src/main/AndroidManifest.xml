@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ravelelectronics">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ravel_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ravel_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ViewFollowUp"></activity>
+        <activity android:name=".ApprovalScreen" />
+        <activity android:name=".ViewPresales" />
+        <activity android:name=".ViewTarget" />
+        <activity android:name=".ViewAttendance" />
+        <activity android:name=".ViewActivity" />
+        <activity android:name=".ViewAllowance" />
+        <activity android:name=".ViewQuotation" />
+        <activity android:name=".ViewProjection" />
+        <activity android:name=".SalesOrderActivity" />
+        <activity android:name=".PresalesActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Projectonscr" />
+        <activity android:name=".SalesQuotation" />
+        <activity android:name=".CustomerProfile" />
+        <activity android:name=".AllowanceActivity" />
+        <activity android:name=".SalesmanTarget" />
+        <activity android:name=".ActivityScreen" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".StopAttendance" />
+        <activity android:name=".StartAttendance" />
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".MasterActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".LoginActivity" />
+<!--        <activity android:name=".SplashActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity android:name=".fileupload.UploadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".spinnerclasses.CustomerList_Spinner" />
+        <activity android:name=".spinnerclasses.ActivityList_Spinner" />
+        <activity android:name=".spinnerclasses.ItemList_Spinner" />
+        <activity android:name=".spinnerclasses.PlaceofSupplyList_Spinner" />
+        <activity android:name=".spinnerclasses.TaxCodeList_Spinner" />
+        <activity android:name=".spinnerclasses.SQTypeList_Spinner" />
+        <activity android:name=".spinnerclasses.QuoteStatusList_Spinner" />
+        <activity android:name=".spinnerclasses.WarehouseList_Spinner" />
+        <activity android:name=".spinnerclasses.TypeList_Spinner" />
+        <activity android:name=".spinnerclasses.PresalesCategoryList_Spinner" />
+        <activity android:name=".spinnerclasses.OppurtunityTypeList_Spinner" />
+        <activity android:name=".spinnerclasses.StatusTypeList_Spinner" />
+        <activity android:name=".spinnerclasses.GroupList_Spinner" />
+        <activity android:name=".spinnerclasses.CurrencyList_Spinner" />
+        <activity android:name=".spinnerclasses.ProjectionCategoryList_Spinner" />
+        <activity android:name=".spinnerclasses.DurationList_Spinner" />
+        <activity android:name=".spinnerclasses.EmployeeList_Spinner" />
+        <activity android:name=".ViewAllowanceApproval" />
+        <activity android:name=".ViewQuotationApproval" />
+    </application>
+
+</manifest>

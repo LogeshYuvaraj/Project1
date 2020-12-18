@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RavelElectronics</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="Sales">Sales quotation status</string>
+
+
+</resources>
